@@ -1,65 +1,37 @@
-/* This is a demo on how to send SAMSUNG ir codes.
- * The code expects an IR led to be connected to Pin 0
- * 
- * A SAMSUNG IR code has the following form
- * 
- * START SIGNAL
- * 32 bits i.e. 32 time ONE or ZERO signal
- * END SIGNAL
- * 
- * Each of these 4 signals is encoded by a certain time of a 38 khz 
- * pulsed signal (on) followed by a certain time off.
- * 
- * START SIGNAL: 4500 μs on, 4500 μs off
- * ONE SIGNAL: 560 μs on, 1600 μs off
- * ZERO SIGNAL: 560 μs on, 530 μs off
- * END SIGNAL: 560 μs on, 4500 μs off
- * 
- * 
- * 
- 跳舞
 
- 音量+
- 音量-
- 
- 步行前进
- 步行后退
-
-滑行前进
-滑行后退
-左转
-右转
-停止
-
-向左看
-向右看
-
-数学
-科普
-英语
-
-声控互动
-能量转换
-编程
-歌曲
-
- */
-
-// timing constants
-const LEADER_PULSE = 6000;
-const PULSE_ONE = 1600;
-const PULSE_ZERO = 530;
 
 // slow down factor for demo, at about 100 or 200 times slower
 // you can see what is going on
-let FACTOR = 1
+let FACTOR = 1000
+
+//function ledOn(d: number) {
+//    let r = d * FACTOR;
+//    while (r > 26) {
+//        pins.digitalWritePin(DigitalPin.P1, 1)
+//        control.waitMicros(2);
+//        pins.digitalWritePin(DigitalPin.P1, 0)
+//        r = r - 26;
+//    }
+//}
 
 function ledOn(d: number) {
     let r = d * FACTOR;
     while (r > 26) {
-        pins.digitalWritePin(DigitalPin.P1, 1)
+        basic.showLeds(`
+    . . . . .
+    . . . . .
+    . . # . .
+    . . . . .
+    . . . . .
+    `)
         control.waitMicros(2);
-        pins.digitalWritePin(DigitalPin.P1, 0)
+        basic.showLeds(`
+    . . . . .
+    . . . . .
+    . . . . .
+    . . . . .
+    . . . . .
+    `)
         r = r - 26;
     }
 }
@@ -72,9 +44,9 @@ function ledOff(d: number) {
 function send(code: number) {
     for (let i = 15; i > -1; i--) {
         if (1 << i & code) {
-            ledOn(PULSE_ONE);
+            ledOn(1);
         } else {
-            ledOff(PULSE_ZERO);
+            ledOff(1);
         }
     }
 }
@@ -143,3 +115,11 @@ input.onButtonPressed(Button.A, () => {
 
     
 })
+
+
+/**
+basic.forever(function () {
+    serial.writeValue("x", 0)
+})
+
+**/
