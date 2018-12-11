@@ -1,7 +1,4 @@
-
-
 // slow down factor for demo, at about 100 or 200 times slower
-// you can see what is going on
 let FACTOR = 1000
 
 //function ledOn(d: number) {
@@ -36,6 +33,7 @@ function ledOn(d: number) {
     }
 }
 
+
 function ledOff(d: number) {
     control.waitMicros(d * FACTOR);
 }
@@ -52,68 +50,64 @@ function send(code: number) {
 }
 
 // send 32 bit with appropriate start and end
-function command(ir1: number, ir2: number) {
-    let factorx = 1
+function stop() {
+
     //1
-    ledOn(6000 * factorx);
+    ledOn(6000);
 
     //2
-    ledOff(600 * factorx);
+    ledOff(600);
 
     //3
-    ledOn(600 * factorx);
+    ledOn(600);
 
     //4
-    ledOff(1500 * factorx);
+    ledOff(1500);
 
     //5
-    ledOn(1500 * factorx);
+    ledOn(1500);
 
     //6
-    ledOff(600 * factorx);
+    ledOff(600);
 
     //7
-    ledOn(1500 * factorx);
+    ledOn(1500);
 
     //8
-    ledOff(600 * factorx);
+    ledOff(600);
 
     //9
-    ledOn(1500 * factorx);
+    ledOn(1500);
 
     //10
-    ledOff(600 * factorx);
+    ledOff(600);
 
     //11
-    ledOn(600 * factorx);
+    ledOn(600);
 
     //12
-    ledOff(1500 * factorx);
+    ledOff(1500);
 
     //13
-    ledOn(1500 * factorx);
+    ledOn(1500);
 
     //14
-    ledOff(600 * factorx);
+    ledOff(600);
 
     //15
-    ledOn(1500 * factorx);
+    ledOn(1500);
 
     //16
-    ledOff(600 * factorx);
+    ledOff(600);
 
     //17
-    ledOn(1500 * factorx);
-
+    ledOn(1500);
 }
 
 // Button A sends code
 input.onButtonPressed(Button.A, () => {
-    command(0x35, 0x35);
-    //send(0x35)
+    stop();
 
-
-    
 })
 
 
