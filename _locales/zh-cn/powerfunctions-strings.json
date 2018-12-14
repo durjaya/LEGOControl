@@ -15,11 +15,11 @@
   "powerfunctions.moveBackward|block": "fahre rückwärts mit Motor %motor",
   "powerfunctions.brake|block": "bremse Motor %motor",
   "powerfunctions.float|block": "lasse Motor %motor | ausrollen",
-  "powerfunctions.setSpeed|block": "11111 | Motor %motor | auf %speed",
-  "powerfunctions.useIrLedPin|block": "pcc IR LED an Pin",
+  "powerfunctions.setSpeed|block": "schalte | Motor %motor | auf %speed",
+  "powerfunctions.useIrLedPin|block": "nutze IR LED an Pin %pin",
   "powerfunctions.setMotorDirection|block": "setze Richtung | von Motor %motor | auf %direction",
   "powerfunctions.adjustIrTiming|block": "konfiguriere Zeiten | der IR Marke %markMicroSeconds | und Pause %pauseMicroSeconds",
-  "powerfunctions.sttt|block": "xxccc",
-  "powerfunctions|block": "Power Functions111",
-  "{id:category}Power Functions": "Power Functionsiii"
+  "powerfunctions|block": "机器人",
+  "powerfunctions.stop|block": "zzzz",
+  "{id:category}Power Functions": "机器人"
 }
