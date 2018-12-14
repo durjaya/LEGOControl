@@ -11,8 +11,8 @@
         "main.ts",
         "_locales/de/powerfunctions-strings.json",
         "_locales/de/powerfunctions-jsdoc-strings.json",
-        "_locales/cn/powerfunctions-strings.json",
-        "_locales/cn/powerfunctions-jsdoc-strings.json"
+        "_locales/zh-cn/powerfunctions-strings.json",
+        "_locales/zh-cn/powerfunctions-jsdoc-strings.json"
     ],
     "testFiles": [
         "test.ts"
