@@ -19,7 +19,11 @@
   "powerfunctions.useIrLedPin|block": "p2 IR LED an Pin",
   "powerfunctions.setMotorDirection|block": "setze Richtung | von Motor %motor | auf %direction",
   "powerfunctions.adjustIrTiming|block": "konfiguriere Zeiten | der IR Marke %markMicroSeconds | und Pause %pauseMicroSeconds",
+<<<<<<< HEAD
   "powerfunctions.sttt|block": "xx2",
+=======
+  "powerfunctions.sttt|block": "tttt",
+>>>>>>> parent of 7d637f7... Update powerfunctions-strings.json
   "powerfunctions|block": "Power Functions",
   "{id:category}Power Functions": "Power Functions"
 }
