@@ -113,12 +113,12 @@ namespace powerfunctions {
      * Configures the infrared LED pin. A 940 nm emitting diode is required.
      */
     //% blockId=pf_use_ir_led_pin
-    //% block="use IR LED on pin %pin"
+    //% block="use IR LED on pin"
     //% weight=30
-    //% pin.fieldEditor="gridpicker" pin.fieldOptions.columns=4 pin.fieldOptions.tooltips="false"
+    //%  pin.fieldOptions.columns=4 pin.fieldOptions.tooltips="false"
     //% advanced=true
-    export function useIrLedPin(pin: AnalogPin) {
-        irLed = pin
+    export function useIrLedPin() {
+     
     }
 
     /**
