@@ -139,7 +139,6 @@ namespace powerfunctions {
     //% blockId=sttt
     //% block="sttt"
     //% weight=20
-    //% motor.fieldEditor="gridpicker" motor.fieldOptions.columns=4 motor.fieldOptions.tooltips="false"
      export function sttt() {
       }
 
