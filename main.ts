@@ -133,6 +133,17 @@ namespace powerfunctions {
         motorDirections[motor] = direction
     }
 
+
+        /**
+     * Configures a motor direction.
+     */
+    //% blockId=sttt
+    //% block="sttt"
+    //% weight=20
+    //% motor.fieldEditor="gridpicker" motor.fieldOptions.columns=4 motor.fieldOptions.tooltips="false"
+     export function sttt() {
+      }
+
     /**
      * Adjust timing configuration to reach the required IR precision.
      * Due to the overhead of function calls the sleep intervals during transmission of IR commands need to be shortened.
