@@ -19,7 +19,7 @@
   "powerfunctions.useIrLedPin|block": "nutze IR LED an Pin %pin",
   "powerfunctions.setMotorDirection|block": "setze Richtung | von Motor %motor | auf %direction",
   "powerfunctions.adjustIrTiming|block": "konfiguriere Zeiten | der IR Marke %markMicroSeconds | und Pause %pauseMicroSeconds",
-  "powerfunctions.sttt|block": "tttt",
+  "powerfunctions.sttt|block": "xxx",
   "powerfunctions|block": "Power Functions",
   "{id:category}Power Functions": "Power Functions"
 }
