@@ -20,5 +20,6 @@
   "powerfunctions.setMotorDirection|block": "setze Richtung | von Motor %motor | auf %direction",
   "powerfunctions.adjustIrTiming|block": "konfiguriere Zeiten | der IR Marke %markMicroSeconds | und Pause %pauseMicroSeconds",
   "powerfunctions|block": "机器人",
+  "powerfunctions|stop": "zzzz",
   "{id:category}Power Functions": "机器人"
 }
