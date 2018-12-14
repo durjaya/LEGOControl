@@ -115,7 +115,6 @@ namespace powerfunctions {
     //% blockId=pf_use_ir_led_pin
     //% block="use IR LED on pin"
     //% weight=30
-    //%  pin.fieldOptions.columns=4 pin.fieldOptions.tooltips="false"
     //% advanced=true
     export function useIrLedPin() {
      
