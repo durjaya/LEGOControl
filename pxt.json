@@ -10,6 +10,8 @@
         "README.md",
         "main.ts",
         "_locales/de/powerfunctions-strings.json",
+        "_locales/de/powerfunctions-jsdoc-strings.json",
+        "_locales/de/powerfunctions-strings.json",
         "_locales/de/powerfunctions-jsdoc-strings.json"
     ],
     "testFiles": [
