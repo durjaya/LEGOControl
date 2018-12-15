@@ -499,7 +499,7 @@ namespace powerfunctions {
     }
 
     //% blockId=musicradio1
-    //% block="musicradio1"
+    //% block="musicradio2"
     //% weight=60
     export function musicradio2(markMicroSeconds: number){
 
