@@ -501,36 +501,13 @@ namespace powerfunctions {
     //% blockId=musicradio1
     //% block="musicradio1"
     //% weight=60
-    export function musicradio1(){
-        ledOn(5950);
-        ledOff(600);
-        ledOn(1500);
-        ledOff(600);
-        ledOn(1500);
-        ledOff(600);
-        ledOn(600);
-        ledOff(1500);
-        ledOn(1500);
-        ledOff(600);
-        ledOn(1500);
-        ledOff(600);
-        ledOn(600);
-        ledOff(1500);
-        ledOn(600);
-        ledOff(1500);
-        ledOn(1500);
-        waitToNext();
+    export function musicradio2(markMicroSeconds: number){
+
     }
 
 
 
 
-    /**
-     * Adjust timing configuration to reach the required IR precision.
-     * Due to the overhead of function calls the sleep intervals during transmission of IR commands need to be shortened.
-     * Timing depends on both the device and the MakeCode version.
-     * Recommended default values are -65 micro seconds for the IR mark and -150 micro seconds for the pause.
-     */
     //% blockId=pf_adjust_ir_timing
     //% block="adjust timing | of IR mark %markMicroSeconds | and pause %pauseMicroSeconds"
     //% weight=10
