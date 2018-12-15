@@ -500,13 +500,26 @@ namespace powerfunctions {
 
 
 
+    /**
+     * Adjust timing configuration to reach the required IR precision.
+     * Due to the overhead of function calls the sleep intervals during transmission of IR commands need to be shortened.
+     * Timing depends on both the device and the MakeCode version.
+     * Recommended default values are -65 micro seconds for the IR mark and -150 micro seconds for the pause.
+     */
     //% blockId=pf_adjust_ir_timing
-    //% block="Wait | for %second"
+    //% block="adjust timing | of IR mark %markMicroSeconds | and pause %pauseMicroSeconds"
     //% weight=10
-    export function waitForSec(second: number = 2)
+    //% markMicroSeconds.min=-157 markMicroSeconds.max=0
+    //% pauseMicroSeconds.min=-263 pauseMicroSeconds.max=0
+    //% advanced=true
+    export function adjustIrTiming(
+        markMicroSeconds: number = 2,
+        pauseMicroSeconds: number = 2)
     {
-        control.waitMicros(1000000 * second);
+        let markTimingCorrectionMicroSeconds = markMicroSeconds;
+        let pauseTimingCorrectionMicroSeconds = pauseMicroSeconds;
     }
+
 
 
 }
