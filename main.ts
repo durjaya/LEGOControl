@@ -514,7 +514,7 @@ namespace powerfunctions {
     export function adjustIrTiming(
         markMicroSeconds: number = 2)
     {
-        let markTimingCorrectionMicroSeconds = markMicroSeconds;
+        control.waitMicros(1000000*markMicroSeconds);
     }
 
 
