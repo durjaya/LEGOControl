@@ -498,6 +498,31 @@ namespace powerfunctions {
         waitToNext();
     }
 
+    //% blockId=musicradio1
+    //% block="musicradio1"
+    //% weight=60
+    export function musicradio1(){
+        ledOn(5950);
+        ledOff(600);
+        ledOn(1500);
+        ledOff(600);
+        ledOn(1500);
+        ledOff(600);
+        ledOn(600);
+        ledOff(1500);
+        ledOn(1500);
+        ledOff(600);
+        ledOn(1500);
+        ledOff(600);
+        ledOn(600);
+        ledOff(1500);
+        ledOn(600);
+        ledOff(1500);
+        ledOn(1500);
+        waitToNext();
+    }
+
+
 
 
     /**
