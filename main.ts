@@ -502,7 +502,7 @@ namespace powerfunctions {
 
 
     //% blockId=pf_adjust_ir_timing
-    //% block="Wait | for %markMicroSeconds"
+    //% block="Wait for %markMicroSeconds"
     //% weight=10
     export function adjustIrTiming(
         markMicroSeconds: number = 2)
@@ -511,5 +511,14 @@ namespace powerfunctions {
     }
 
 
+    //% blockId=pf_adjust_ir_timing
+    //% block="adjust timing | of IR mark %markMicroSeconds | and pause %pauseMicroSeconds"
+    //% weight=10
+    export function adjustIrTiming(
+        markMicroSeconds: number = BoardConfig.MarkTimingCorrectionMicroSeconds,
+        pauseMicroSeconds: number = BoardConfig.PauseTimingCorrectionMicroSeconds)
+    {
+
+    }
 
 }
