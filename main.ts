@@ -501,7 +501,7 @@ namespace powerfunctions {
 
 
     //% blockId=pf_adjust_ir_timing
-    //% block="Wait for %second second"
+    //% block="Wait | for %second"
     //% weight=10
     export function waitForSec(second: number = 2)
     {
