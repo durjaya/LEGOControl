@@ -85,7 +85,7 @@ function dance(){
     ledOn(600);
     ledOff(1500);
     ledOn(600);
-    waitToNext()
+    waitToNext();
 }
 
 function volumePlus(){
