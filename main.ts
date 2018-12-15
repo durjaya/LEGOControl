@@ -509,17 +509,12 @@ namespace powerfunctions {
 
 
     //% blockId=pf_adjust_ir_timing
-    //% block="adjust timing | of IR mark %markMicroSeconds | and pause %pauseMicroSeconds"
+    //% block="Wait | for %markMicroSeconds"
     //% weight=10
-    //% markMicroSeconds.min=-157 markMicroSeconds.max=0
-    //% pauseMicroSeconds.min=-263 pauseMicroSeconds.max=0
-    //% advanced=true
     export function adjustIrTiming(
-        markMicroSeconds: number = 2,
-        pauseMicroSeconds: number = 2)
+        markMicroSeconds: number = 2)
     {
         let markTimingCorrectionMicroSeconds = markMicroSeconds;
-        let pauseTimingCorrectionMicroSeconds = pauseMicroSeconds;
     }
 
 
