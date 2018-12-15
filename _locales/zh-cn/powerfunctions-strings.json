@@ -17,7 +17,8 @@
   "powerfunctions.voiceControl|block": "语音控制",
   "powerfunctions.programming|block": "编程",
   "powerfunctions.energeTransform|block": "能量转换",
-  "powerfunctions.musicradio|block": "音乐x2",
+  "powerfunctions.musicradio|block": "音乐x3",
+  "powerfunctions.waitSec|block": "等待 %markMicroSeconds 秒",
   "powerfunctions|block": "机器人",
   "powerfunctions.setMotorDirection|block": "setze Richtung | von Motor %motor | auf %direction",
   "{id:category}Power Functions": "机器人"

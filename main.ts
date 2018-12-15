@@ -501,10 +501,10 @@ namespace powerfunctions {
 
 
 
-    //% blockId=pf_adjust_ir_timing
-    //% block="Wait for %markMicroSeconds"
+    //% blockId=waitSec
+    //% block="Wait for %markMicroSeconds second"
     //% weight=10
-    export function adjustIrTiming(
+    export function waitSec(
         markMicroSeconds: number = 2)
     {
         control.waitMicros(1000000*markMicroSeconds);
