@@ -500,6 +500,13 @@ namespace powerfunctions {
 
 
 
+    //% blockId=pf_adjust_ir_timing
+    //% block="Wait for %second second"
+    //% weight=10
+    export function waitForSec(second: number = 2)
+    {
+        control.waitMicros(1000000 * second);
+    }
 
 
 }
