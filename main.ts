@@ -18,6 +18,10 @@ namespace powerfunctions {
           control.waitMicros(d * FACTOR);
     }
 
+    function waitToNext(){
+        control.waitMicros(200000);
+    }
+
    
 
     //% blockId=stop
@@ -59,6 +63,7 @@ namespace powerfunctions {
         ledOff(600);
         //17
         ledOn(1500);
+        waitToNext();
     }
 
     //% blockId=dance
@@ -82,6 +87,7 @@ namespace powerfunctions {
         ledOn(600);
         ledOff(1500);
         ledOn(600);
+        waitToNext();
     }
 
     //% blockId=volumePlus
@@ -105,6 +111,7 @@ namespace powerfunctions {
         ledOn(1500);
         ledOff(600);
         ledOn(600);
+        waitToNext();
     }
 
     //% blockId=volumeSub
@@ -128,6 +135,7 @@ namespace powerfunctions {
         ledOn(600);
         ledOff(1500); 
         ledOn(600);
+        waitToNext();
     }
 
     //% blockId=moveForward
@@ -151,6 +159,7 @@ namespace powerfunctions {
         ledOn(600);
         ledOff(1500);
         ledOn(600);
+        waitToNext();
     }
 
     //% blockId=moveBack
@@ -174,6 +183,7 @@ namespace powerfunctions {
         ledOn(1500);
         ledOff(600);
         ledOn(600);
+        waitToNext();
     }
 
     //% blockId=lookLeft
@@ -197,6 +207,7 @@ namespace powerfunctions {
         ledOn(600);
         ledOff(1500);
         ledOn(600);
+        waitToNext();
     }
 
     //% blockId=lookRight
@@ -220,6 +231,7 @@ namespace powerfunctions {
         ledOn(1500);
         ledOff(600);
         ledOn(600);
+        waitToNext();
     }
 
     //% blockId=slipForward
@@ -243,6 +255,7 @@ namespace powerfunctions {
         ledOn(600);
         ledOff(1500);
         ledOn(600);
+        waitToNext();
     }
 
     //% blockId=slipBack
@@ -266,6 +279,7 @@ namespace powerfunctions {
         ledOn(1500);
         ledOff(600);
         ledOn(1500);
+        waitToNext();
     }
 
     //% blockId=turnLeft
@@ -289,6 +303,7 @@ namespace powerfunctions {
         ledOn(600);
         ledOff(1500);
         ledOn(600);
+        waitToNext();
     }
 
     //% blockId=turnRight
@@ -312,6 +327,7 @@ namespace powerfunctions {
         ledOn(600);
         ledOff(1500);
         ledOn(1500);
+        waitToNext();
     }
 
     //% blockId=math
@@ -335,6 +351,7 @@ namespace powerfunctions {
         ledOn(1500);
         ledOff(600);
         ledOn(1500);
+        waitToNext();
     }
 
     //% blockId=science
@@ -358,6 +375,7 @@ namespace powerfunctions {
         ledOn(1500);
         ledOff(600);
         ledOn(1500);
+        waitToNext();
     }
 
     //% blockId=english
@@ -381,6 +399,7 @@ namespace powerfunctions {
         ledOn(600);
         ledOff(1500);
         ledOn(600);
+        waitToNext();
     }
 
     //% blockId=voiceControl
@@ -404,6 +423,7 @@ namespace powerfunctions {
         ledOn(1500);
         ledOff(600);
         ledOn(1500);
+        waitToNext();
     }
 
     //% blockId=programming
@@ -427,6 +447,7 @@ namespace powerfunctions {
         ledOn(600);
         ledOff(1500);
         ledOn(1500);
+        waitToNext();
     }
 
     //% blockId=energeTransform
@@ -450,6 +471,7 @@ namespace powerfunctions {
         ledOn(1500);
         ledOff(600);
         ledOn(1500);
+        waitToNext();
     }
 
     //% blockId=musicradio
@@ -473,6 +495,7 @@ namespace powerfunctions {
         ledOn(600);
         ledOff(1500);
         ledOn(1500);
+        waitToNext();
     }
 
 

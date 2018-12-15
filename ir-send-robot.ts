@@ -20,6 +20,11 @@ function ledOff(d: number) {
     control.waitMicros(d * FACTOR);
 }
 
+function waitToNext(){
+    control.waitMicros(200000);
+}
+
+
 
 // Stop
 function stop() {
@@ -58,6 +63,7 @@ function stop() {
     ledOff(600);
     //17
     ledOn(1500);
+    waitToNext()
 }
 
 //Dance
@@ -79,6 +85,7 @@ function dance(){
     ledOn(600);
     ledOff(1500);
     ledOn(600);
+    waitToNext()
 }
 
 function volumePlus(){
@@ -99,6 +106,7 @@ function volumePlus(){
     ledOn(1500);
     ledOff(600);
     ledOn(600);
+    waitToNext()
 }
 
 function volumeSub(){
@@ -119,6 +127,7 @@ function volumeSub(){
     ledOn(600);
     ledOff(1500); 
     ledOn(600);
+    waitToNext()
 }
 
 function moveForward(){
@@ -139,6 +148,7 @@ function moveForward(){
     ledOn(600);
     ledOff(1500);
     ledOn(600);
+    waitToNext()
 }
 
 function moveBack(){
@@ -159,6 +169,7 @@ function moveBack(){
     ledOn(1500);
     ledOff(600);
     ledOn(600);
+    waitToNext()
 }
 
 function lookLeft(){
@@ -179,6 +190,7 @@ function lookLeft(){
     ledOn(600);
     ledOff(1500);
     ledOn(600);
+    waitToNext()
 }
 
 function lookRight(){
@@ -199,6 +211,7 @@ function lookRight(){
     ledOn(1500);
     ledOff(600);
     ledOn(600);
+    waitToNext()
 }
 
 function slipForward(){
@@ -219,6 +232,7 @@ function slipForward(){
     ledOn(600);
     ledOff(1500);
     ledOn(600);
+    waitToNext()
 }
 
 function slipBack(){
@@ -239,6 +253,7 @@ function slipBack(){
     ledOn(1500);
     ledOff(600);
     ledOn(1500);
+    waitToNext()
 }
 
 function turnLeft(){
@@ -259,6 +274,7 @@ function turnLeft(){
     ledOn(600);
     ledOff(1500);
     ledOn(600);
+    waitToNext()
 }
 
 function turnRight(){
@@ -299,6 +315,7 @@ function math(){
     ledOn(1500);
     ledOff(600);
     ledOn(1500);
+    waitToNext()
 }
 
 function science(){
@@ -319,6 +336,7 @@ function science(){
     ledOn(1500);
     ledOff(600);
     ledOn(1500);
+    waitToNext()
 }
 
 function english(){
@@ -339,6 +357,7 @@ function english(){
     ledOn(600);
     ledOff(1500);
     ledOn(600);
+    waitToNext()
 }
 
 function voiceControl(){
@@ -359,6 +378,7 @@ function voiceControl(){
     ledOn(1500);
     ledOff(600);
     ledOn(1500);
+    waitToNext()
 }
 
 function programming(){
@@ -379,6 +399,7 @@ function programming(){
     ledOn(600);
     ledOff(1500);
     ledOn(1500);
+    waitToNext()
 }
 
 function energeTransform(){
@@ -399,6 +420,7 @@ function energeTransform(){
     ledOn(1500);
     ledOff(600);
     ledOn(1500);
+    waitToNext()
 }
 
 function musicradio(){
@@ -419,6 +441,7 @@ function musicradio(){
     ledOn(600);
     ledOff(1500);
     ledOn(1500);
+    waitToNext()
 }
 
 
