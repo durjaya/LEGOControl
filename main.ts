@@ -498,13 +498,6 @@ namespace powerfunctions {
         waitToNext();
     }
 
-    //% blockId=musicradio2
-    //% block="musicradio2"
-    //% weight=60
-    export function musicradio2(markMicroSeconds: number){
-
-    }
-
 
 
 

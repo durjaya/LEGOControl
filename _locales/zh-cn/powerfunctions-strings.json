@@ -18,7 +18,6 @@
   "powerfunctions.programming|block": "编程",
   "powerfunctions.energeTransform|block": "能量转换",
   "powerfunctions.musicradio|block": "音乐x2",
-  "powerfunctions.musicradio2|block": "音乐2",
   "powerfunctions|block": "机器人",
   "{id:category}Power Functions": "机器人"
 }
