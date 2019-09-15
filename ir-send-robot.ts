@@ -5,9 +5,9 @@ let value  = 0
 function ledOn(d: number) {
     let r = d * FACTOR;
     while (r > 26) {
-        pins.digitalWritePin(DigitalPin.P1, 1)
+        pins.digitalWritePin(DigitalPin.P0, 1)
         control.waitMicros(2);
-        pins.digitalWritePin(DigitalPin.P1, 0)
+        pins.digitalWritePin(DigitalPin.P0, 0)
         r = r - 26;
     }
 }
